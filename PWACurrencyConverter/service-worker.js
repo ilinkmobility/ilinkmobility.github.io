@@ -3,7 +3,6 @@ var cacheName = 'currencyPWA-1';
 var filesToCache = [
   '/',
   '/PWACurrencyConverter/index.htm',
-  '/PWACurrencyConverter/favicon.ico',
   '/PWACurrencyConverter/js/app.js',
   '/PWACurrencyConverter/js/phonon.min.js',
   '/PWACurrencyConverter/css/phonon.min.css',
@@ -11,6 +10,7 @@ var filesToCache = [
   '/PWACurrencyConverter/fonts/material-design-icons.svg',
   '/PWACurrencyConverter/fonts/material-design-icons.ttf',
   '/PWACurrencyConverter/fonts/material-design-icons.woff',
+  '/PWACurrencyConverter/img/favicon.png',
   '/PWACurrencyConverter/img/icon-128x128.png',
   '/PWACurrencyConverter/img/icon-144x144.png',
   '/PWACurrencyConverter/img/icon-152x152.png',
