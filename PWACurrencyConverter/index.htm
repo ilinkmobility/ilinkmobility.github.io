@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+
+        <link rel="stylesheet" href="css/phonon.min.css" />
+        <link rel="manifest" href="manifest.json">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+        <link rel="shortcut icon" type="image/png" href="https://goodstudies.github.io/PWACurrencyConverter/img/favicon.png"/>
+        <title>PWA-CC</title>
+    </head>
+    <body>
+        <div id="currency-from" class="panel-full">
+            <header class="header-bar">
+                <button class="btn pull-right icon icon-close" data-panel-close="true"></button>
+                <div class="pull-left">
+                    <h1 class="title">Select Currency</h1>
+                </div>
+            </header>
+
+            <div class="content">
+                <ul class="list" data-panel-close="true">
+                    <li class="padded-list" onclick="onSelect('AUD', 0)">Australian Dollar</li>
+                    <li class="padded-list" onclick="onSelect('BGN', 0)">Bulgarian Lev</li>
+                    <li class="padded-list" onclick="onSelect('BRL', 0)">Brazilian Real</li>
+                    <li class="padded-list" onclick="onSelect('CAD', 0)">Canadian Dollar</li>
+                    <li class="padded-list" onclick="onSelect('CHF', 0)">Swiss Franc</li>
+                    <li class="padded-list" onclick="onSelect('CNY', 0)">Chinese Yuan</li>
+                    <li class="padded-list" onclick="onSelect('CZK', 0)">Czech Koruna</li>
+                    <li class="padded-list" onclick="onSelect('DKK', 0)">Danish Krone</li>
+                    <li class="padded-list" onclick="onSelect('EUR', 0)">Euro</li>
+                    <li class="padded-list" onclick="onSelect('GBP', 0)">British Pound</li>
+                    <li class="padded-list" onclick="onSelect('HKD', 0)">Hong Kong Dollar</li>
+                    <li class="padded-list" onclick="onSelect('HRK', 0)">Croatian Kuna</li>
+                    <li class="padded-list" onclick="onSelect('HUF', 0)">Hungarian Forint</li>
+                    <li class="padded-list" onclick="onSelect('IDR', 0)">Indonesian Rupiah</li>
+                    <li class="padded-list" onclick="onSelect('ILS', 0)">Israeli Shekel</li>
+                    <li class="padded-list" onclick="onSelect('INR', 0)">Indian Rupee</li>
+                    <li class="padded-list" onclick="onSelect('JPY', 0)">Japanese Yen</li>
+                    <li class="padded-list" onclick="onSelect('KRW', 0)">Korean Won</li>
+                    <li class="padded-list" onclick="onSelect('MXN', 0)">Mexican Peso</li>
+                    <li class="padded-list" onclick="onSelect('MYR', 0)">Malaysian Ringgit</li>
+                    <li class="padded-list" onclick="onSelect('NOK', 0)">Norwegian Krone</li>
+                    <li class="padded-list" onclick="onSelect('NZD', 0)">New Zealand Dollar</li>
+                    <li class="padded-list" onclick="onSelect('PHP', 0)">Philippine Peso</li>
+                    <li class="padded-list" onclick="onSelect('PLN', 0)">Polish Zloty</li>
+                    <li class="padded-list" onclick="onSelect('RON', 0)">Romanian Leu</li>
+                    <li class="padded-list" onclick="onSelect('RUB', 0)">Russian Rouble</li>
+                    <li class="padded-list" onclick="onSelect('SEK', 0)">Swedish Krona</li>
+                    <li class="padded-list" onclick="onSelect('SGD', 0)">Singapore Dollar</li>
+                    <li class="padded-list" onclick="onSelect('THB', 0)">Thai Baht</li>
+                    <li class="padded-list" onclick="onSelect('TRY', 0)">Turkey Lira</li>
+                    <li class="padded-list" onclick="onSelect('USD', 0)">US Dollar</li>
+                    <li class="padded-list" onclick="onSelect('ZAR', 0)">South African Rand</li>
+            </div>
+        </div>
+
+        <div id="currency-to" class="panel-full">
+            <header class="header-bar">
+                <button class="btn pull-right icon icon-close" data-panel-close="true"></button>
+                <div class="pull-left">
+                    <h1 class="title">Select Currency</h1>
+                </div>
+            </header>
+
+            <div class="content">
+                <ul class="list" data-panel-close="true">
+                    <li class="padded-list" onclick="onSelect('AUD', 1)">Australian Dollar</li>
+                    <li class="padded-list" onclick="onSelect('BGN', 1)">Bulgarian Lev</li>
+                    <li class="padded-list" onclick="onSelect('BRL', 1)">Brazilian Real</li>
+                    <li class="padded-list" onclick="onSelect('CAD', 1)">Canadian Dollar</li>
+                    <li class="padded-list" onclick="onSelect('CHF', 1)">Swiss Franc</li>
+                    <li class="padded-list" onclick="onSelect('CNY', 1)">Chinese Yuan</li>
+                    <li class="padded-list" onclick="onSelect('CZK', 1)">Czech Koruna</li>
+                    <li class="padded-list" onclick="onSelect('DKK', 1)">Danish Krone</li>
+                    <li class="padded-list" onclick="onSelect('EUR', 1)">Euro</li>
+                    <li class="padded-list" onclick="onSelect('GBP', 1)">British Pound</li>
+                    <li class="padded-list" onclick="onSelect('HKD', 1)">Hong Kong Dollar</li>
+                    <li class="padded-list" onclick="onSelect('HRK', 1)">Croatian Kuna</li>
+                    <li class="padded-list" onclick="onSelect('HUF', 1)">Hungarian Forint</li>
+                    <li class="padded-list" onclick="onSelect('IDR', 1)">Indonesian Rupiah</li>
+                    <li class="padded-list" onclick="onSelect('ILS', 1)">Israeli Shekel</li>
+                    <li class="padded-list" onclick="onSelect('INR', 1)">Indian Rupee</li>
+                    <li class="padded-list" onclick="onSelect('JPY', 1)">Japanese Yen</li>
+                    <li class="padded-list" onclick="onSelect('KRW', 1)">Korean Won</li>
+                    <li class="padded-list" onclick="onSelect('MXN', 1)">Mexican Peso</li>
+                    <li class="padded-list" onclick="onSelect('MYR', 1)">Malaysian Ringgit</li>
+                    <li class="padded-list" onclick="onSelect('NOK', 1)">Norwegian Krone</li>
+                    <li class="padded-list" onclick="onSelect('NZD', 1)">New Zealand Dollar</li>
+                    <li class="padded-list" onclick="onSelect('PHP', 1)">Philippine Peso</li>
+                    <li class="padded-list" onclick="onSelect('PLN', 1)">Polish Zloty</li>
+                    <li class="padded-list" onclick="onSelect('RON', 1)">Romanian Leu</li>
+                    <li class="padded-list" onclick="onSelect('RUB', 1)">Russian Rouble</li>
+                    <li class="padded-list" onclick="onSelect('SEK', 1)">Swedish Krona</li>
+                    <li class="padded-list" onclick="onSelect('SGD', 1)">Singapore Dollar</li>
+                    <li class="padded-list" onclick="onSelect('THB', 1)">Thai Baht</li>
+                    <li class="padded-list" onclick="onSelect('TRY', 1)">Turkey Lira</li>
+                    <li class="padded-list" onclick="onSelect('USD', 1)">US Dollar</li>
+                    <li class="padded-list" onclick="onSelect('ZAR', 1)">South African Rand</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Side Panel tags go here -->
+
+        <!-- Notification tags go here -->
+
+        <!-- Dialog tags go here -->
+
+        <!-- Popover tags go here -->
+
+        <!-- the home page is the default one. This page does not require to call its content because we define on its tag.-->
+        <home data-page="true">
+
+            <header class="header-bar">
+                <div class="pull-left">
+                    <h1 class="title">PWA Currency Converter</h1>
+                </div>
+            </header>
+            <div class="content padded-full">
+                <div class="row" style="margin-top: 3em;" >
+                    <h4 class="phone-2 tablet-2 column">From</h4>
+                    <h4 class="phone-10 tablet-10 column"><b id="fromCurrency" style="cursor:pointer; color:#4286f4;" data-panel-id="currency-from">US Dollar</b></h4>
+                </div>
+                <div class="row" style="margin-top: 3em;">
+                    <h4 class="phone-2 tablet-2 column">To</h4>
+                    <h4 class="phone-10 tablet-10 column"><b id="toCurrency" style="cursor:pointer; color:#4286f4;" data-panel-id="currency-to">Indian Rupee</b></h4>
+                </div>
+                <h4 style="margin-top: 3em;">Amount</h4>
+                <input style="font-size: 1.5em;" type="number" id="amount" value="1" onchange="updateCurrency()" oninput="updateCurrency()" onpaste="updateCurrency()">
+                <h4 style="margin-top: 3em;">Result : <b style="color:#4286f4;" id="result">0.0</b></h4>
+                <p style="margin-top: 3em; ">Database Last Updated : <span id="dbUpdated"></span></p>
+            </div>
+        </home>
+
+        <!-- scripts -->
+        <script src="js/phonon.min.js"></script>
+
+        <!-- our app config -->
+        <script src="js/app.js"></script>
+    </body>
+</html>
