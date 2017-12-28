@@ -8,7 +8,7 @@
       <Example>Open Currency Converter</Example>
       <ListenFor>{open} Currency Converter</ListenFor>
       <Feedback>Opening Currency Converter</Feedback>
-      <Navigate />
+      <Navigate Target="/index.htm"/>
     </Command>
     
     <PhraseList Label="open">
