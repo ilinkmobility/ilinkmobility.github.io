@@ -12,6 +12,6 @@ C:\Program Files (x86)\Windows Kits\10\References\Windows.Services.Store.StoreCo
 C:\Program Files (x86)\Windows Kits\10\References\Windows.Networking.Connectivity.WwanContract\1.0.0.0\Windows.Networking.Connectivity.WwanContract.winmd
 -emitAnyForUnresolvedTypes
 -outFilePath
-d:\ramanan\projects\github\goodstudies.github.io\uwp-manifoldjs-project\source\bld\debug\winrtrefs\winrtrefs-temp.d.ts
+d:\ramanan\projects\ilinkmobility\ilinkmobility.github.io\uwp-manifoldjs-project\source\bld\debug\winrtrefs\winrtrefs-temp.d.ts
 -emitDocumentation
 -suppressWarningsForUnresolvedWindowsTypes

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.2">
+  <CommandSet xml:lang="en-us" Name="CurrencyConversionCommandSet_en-us">
+    <CommandPrefix>Currency Converter</CommandPrefix>
+    <Example>Currency rates : USD, INR</Example>
+
+    <Command Name="Open_Currency_Converter">
+      <Example>Open Currency Converter</Example>
+      <ListenFor>{open} Currency Converter</ListenFor>
+      <Feedback>Opening Currency Converter</Feedback>
+      <Navigate />
+    </Command>
+    
+    <PhraseList Label="open">
+      <Item>Open</Item>
+	    <Item>Start</Item>
+    </PhraseList>
+ 
+  </CommandSet>
+</VoiceCommands>
