@@ -5,8 +5,8 @@
     <Example>Currency rates : USD, INR</Example>
 
     <Command Name="Open_Currency_Converter">
-      <Example>Open</Example>
-      <ListenFor>{open}</ListenFor>
+      <Example>Open Currency Converter</Example>
+      <ListenFor>{open} Currency Converter</ListenFor>
       <Feedback>Opening</Feedback>
       <Navigate Target="/index.htm" />
     </Command>
