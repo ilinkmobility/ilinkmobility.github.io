@@ -6,12 +6,10 @@
 
     <Command Name="Open_Currency_Converter">
       <Example>Open Currency Converter</Example>
-      <ListenFor RequireAppName="BeforeOrAfterPhrase">Open {openTerm}</ListenFor>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase">Open</ListenFor>
       <Feedback>Opening Currency Converter</Feedback>
       <Navigate Target="/index.htm"/>
     </Command>
-    
-    <PhraseTopic Label="openTerm" />
- 
+     
   </CommandSet>
 </VoiceCommands>
