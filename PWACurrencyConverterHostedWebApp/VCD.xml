@@ -7,7 +7,7 @@
 
     <Command Name="Open_Currency_Converter">
       <Example>Open Currency Converter</Example>
-      <ListenFor>Open</ListenFor>
+      <ListenFor>Open Currency Converter</ListenFor>
       <Feedback>Opening Currency Converter</Feedback>
       <Navigate Target="/index.htm"/>
     </Command>
