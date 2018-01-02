@@ -197,7 +197,7 @@ function CortanaVoiceServices ()
 {
       alert("cortana here");
   
-      if (command === 'Open_Currency_Converter') 
+      if (command == 'Open_Currency_Converter') 
       {
 		  alert("opened currency converter");        
       }
