@@ -199,11 +199,11 @@ function CortanaVoiceServices ()
   
       if (command == 'Open_Currency_Converter') 
       {
-		  alert("opened currency converter");        
+		    alert("opened currency converter");        
       }
       else 
       { 
-        console.log('No valid command specified');
+        alert("currency converter not responding");  
       }
 }
 
