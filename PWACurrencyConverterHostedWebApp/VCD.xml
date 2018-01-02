@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.2">
   <CommandSet xml:lang="en-us" Name="CurrencyConversionCommandSet_en-us">
+
     <AppName>Currency Converter</AppName>
     <Example>Currency rates : USD, INR</Example>
 
     <Command Name="Open_Currency_Converter">
       <Example>Open Currency Converter</Example>
-      <ListenFor RequireAppName="BeforeOrAfterPhrase">Open</ListenFor>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase">Open {openTerm}</ListenFor>
       <Feedback>Opening Currency Converter</Feedback>
       <Navigate Target="/index.htm"/>
     </Command>
-     
+    
+    <PhraseTopic Label="openTerm" />
+ 
   </CommandSet>
 </VoiceCommands>
