@@ -21,7 +21,7 @@ if (typeof Windows !== 'undefined') {
     //   document.getElementById('text').innerHTML = textSpoken;
 
       // Determine the command type {play} defined in vcd
-      if (command === 'send') {
+      if (command === 'Open') {
         // Determine the stream name specified
         console.log('The speech reco result is: ' + speechRecognitionResult);
         console.log('The text spoken is: ' + textSpoken);

@@ -5,7 +5,7 @@
     <AppName>Currency Converter</AppName>
     <Example>Currency rates : USD, INR</Example>
 
-    <Command Name="Open_Currency_Converter">
+    <Command Name="Open">
       <Example>Open Currency Converter</Example>
       <ListenFor>Open Currency Converter</ListenFor>
       <Feedback>Opening Currency Converter</Feedback>
