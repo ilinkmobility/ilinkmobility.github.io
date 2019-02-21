@@ -8,7 +8,7 @@
  */
 
 
-var CurrencyConversionWebAPI = 'https://api.fixer.io/latest?base=USD';
+var CurrencyConversionWebAPI = 'http://data.fixer.io/api/latest?access_key=d48311f6f00c946cca69ef41aa06387c&format2';
 var HTTP_OK = 200;
 var indicator;
 
